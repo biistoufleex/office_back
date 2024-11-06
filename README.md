@@ -13,6 +13,11 @@ with [FrankenPHP](https://frankenphp.dev) and [Caddy](https://caddyserver.com/) 
 4. Open `https://localhost` in your favorite web browser and [accept the auto-generated TLS certificate](https://stackoverflow.com/a/15076602/1352334)
 5. Run `docker compose down --remove-orphans` to stop the Docker containers.
 
+## Development setup
+
+1. Import user fixtures  for development with `docker compose exec php bin/console doctrine:fixtures:load`
+2. Take a look at [Api Platform](https://localhost/api)
+
 ## Features
 
 * Production, development and CI ready
